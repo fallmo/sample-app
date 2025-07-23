@@ -1,16 +1,16 @@
 import { Schema, model } from "mongoose";
 
 type IStat = {
-  country_name: string;
-  cases?: number;
-  deaths?: number;
+  company_name: string;
+  openshift_adoption_year?: number;
+  sector?: string;
 };
 
 export const Stat = model<IStat>(
   "stat",
   new Schema({
-    country_name: String,
-    cases: Number,
-    deaths: Number,
+    company_name: String,
+    openshift_adoption_year: Number,
+    sector: String,
   })
 );
