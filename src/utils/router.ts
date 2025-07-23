@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/version", (req, res) => {
-  res.send("API Version 1.1\n");
+  res.send("API Version 1.0\n");
 });
 router.get("/env", (req, res) => {
   res.json(process.env);
